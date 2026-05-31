@@ -14,32 +14,6 @@ Real-time warehouse staging tracker built with Flask. Workers scan barcodes at e
 
 Python 3 · Flask · Google Sheets API · Playwright · APScheduler · Waitress
 
-## Quick Start
-
-```bash
-git clone https://github.com/rishikaparashar-beep/Staging_Project.git
-cd Staging_Project
-python -m venv venv && venv\Scripts\activate
-pip install -r requirements.txt
-playwright install chromium
-```
-
-Create a `.env` file:
-
-```env
-SPREADSHEET_ID=<your-sheet-id>
-GRIDWISE_SPREADSHEET_ID=<gridwise-sheet-id>
-DRIVE_BACKUP_FOLDER_ID=<drive-folder-id>
-```
-
-Place `credentials.json` (Google OAuth) in the root, then:
-
-```bash
-python app.py
-```
-
-Server runs at `http://localhost:5000`.
-
 ## Project Structure
 
 ```
